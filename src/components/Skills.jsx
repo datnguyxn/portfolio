@@ -3,18 +3,7 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-import {
-    CircularProgressbar,
-    CircularProgressbarWithChildren,
-    buildStyles
-} from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-import ChangingProgressProvider from "../assets/animation/ChangingProgressProvider";
-import AnimatedProgressProvider from "../assets/animation/AnimatedProgressProvider";
-import { easeQuadInOut } from "d3-ease";
 import {useState} from "react";
 
 export const Skills = () => {
@@ -52,23 +41,23 @@ export const Skills = () => {
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
-                                    <h5>Application Development</h5>
+                                    <h5>Javascript</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image"/>
+                                    <h5>HTML/CSS</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image"/>
-                                    <h5>Web Development</h5>
+                                    <h5>PHP</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
-                                    <h5>Web Development</h5>
+                                    <img src={meter3} alt="Image"/>
+                                    <h5>Java</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} alt="Image"/>
-                                    <h5>Web Development</h5>
+                                    <img src={meter3} alt="Image"/>
+                                    <h5>Python</h5>
                                 </div>
                             </Carousel>
                         </div>
